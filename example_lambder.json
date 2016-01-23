@@ -1,0 +1,4 @@
+{
+  "name": "stop-instances",
+  "s3_bucket": "mybucket"
+}
