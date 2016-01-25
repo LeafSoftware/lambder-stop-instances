@@ -9,6 +9,15 @@
         "logs:PutLogEvents"
       ],
       "Resource": "arn:aws:logs:*:*:*"
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "ec2:DescribeInstances",
+        "ec2:StopInstances",
+        "ec2:DescribeTags"
+      ],
+      "Resource": "*"
     }
   ]
 }
