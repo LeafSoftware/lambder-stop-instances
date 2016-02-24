@@ -28,7 +28,7 @@ based on UTC.
     lambder events add \
       --name StopInstances \
       --function-name Lambder-stop-instances \
-      --cron 'cron(0 23 ? * MON-FRI *)'
+      --cron 'cron(0 0 ? * MON-FRI *)'
 
 ## TODO
 
