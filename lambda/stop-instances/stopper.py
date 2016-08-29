@@ -1,5 +1,6 @@
 import boto3
 import logging
+import time
 
 class Stopper:
   TAG_NAME = 'LambderStop'
@@ -35,5 +36,6 @@ class Stopper:
       if state == 'running':
         self.logger.info('Stopping ' + name_str)
         instance.stop()
+        time.sleep(5)
       else:
         self.logger.info('Will not stop ' + name_str + ', state: ' + state)
